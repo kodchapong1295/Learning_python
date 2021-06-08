@@ -73,4 +73,4 @@ while(machine_on):
             else:
                 print("Sorry that's not enough money. Money refunded.")
         else:
-            print(f"Sorry we have Insufficient resources to make {order}. Money refunded.")\
+            print(f"Sorry we have Insufficient resources to make {order}. Money refunded.")
