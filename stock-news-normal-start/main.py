@@ -3,7 +3,7 @@ from decouple import config
 from twilio.rest import Client
 
 STOCK_NAME = "TSLA"
-COMPANY_NAME = "Tesla Inc"
+COMPANY_NAME = "Tesla"
 
 STOCK_API_KEY=config('STOCK_PRICING_API_KEY')
 NEWS_API_KEY=config('STOCK_NEWS_API_KEY')
@@ -56,7 +56,9 @@ if abs(diff_percent)>1:
 
     news_response = requests.get(NEWS_ENDPOINT, params=news_params)
     articles = news_response.json()["articles"]
+    print(articles)
     three_articles = articles[:3]
+    print(three_articles)
 
 
 #Create a new list of the first 3 article's headline and description using list comprehension.
