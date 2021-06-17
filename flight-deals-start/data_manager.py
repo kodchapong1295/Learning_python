@@ -13,15 +13,17 @@ class DataManager:
         self.destination_data = data["prices"]
         return self.destination_data
 
-    def update_destination_data(self):
-        for city in (self.destination_data):
-            SHEET_PUT_ENDPOINT = f"{SHEET_ENDPOINT}/{city['id']}"
+    def update_destination_codes(self):
+        for city in self.destination_data:
             new_data = {
                 "price": {
-                    "iataCode": "TESTING"
+                    "iataCode": city["iataCode"]
                 }
             }
-            response = requests.put(SHEET_PUT_ENDPOINT, json=new_data)
+            response = requests.put(
+                url=f"{SHEET_ENDPOINT}/{city['id']}",
+                json=new_data
+            )
             print(response.text)
 
 
