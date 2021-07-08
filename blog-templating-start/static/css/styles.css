@@ -20,7 +20,7 @@ body{
 
 .top .title {
   width: 700px;
-  margin: 38px auto 0 auto; 
+  margin: 38px auto 0 auto;
 }
 
 .title h1 {
@@ -30,7 +30,7 @@ body{
 }
 
 .content{
-    margin: -80px auto 100px;
+  margin: -80px auto 100px;
   padding-bottom: 20px;
 }
 
