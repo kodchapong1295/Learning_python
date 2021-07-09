@@ -8,7 +8,7 @@ body{
 }
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1 {  
@@ -16,6 +16,12 @@ h1 {
     font-size: 3.5rem;  
     line-height: 1.5;  
     font-weight: 900;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 /* Navigation Bar */
@@ -49,8 +55,9 @@ h1 {
 
 /* Title Image */
 .title-image{
-    width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 20%;
 }
 
 
@@ -58,6 +65,8 @@ h1 {
 /* Features Section */
 #features{
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .feature-card{
@@ -81,4 +90,45 @@ h1 {
 
 .feature-card p{
     color: #8f8f8f;
+}
+
+
+/* Testimonials */
+
+#testimonials{
+    
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+.testimonial-img{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+.pricing-column{
+    padding: 3% 2%;
 }
