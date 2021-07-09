@@ -52,3 +52,33 @@ h1 {
     width: 60%;
     transform: rotate(25deg);
 }
+
+
+
+/* Features Section */
+#features{
+    padding: 7% 15%;
+}
+
+.feature-card{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.feature-card icon{
+    color: #ef8172;
+    padding-bottom: 1rem;
+}
+
+.feature-card icon:hover{
+    color: #ff4c68;
+}
+
+.feature-card h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.feature-card p{
+    color: #8f8f8f;
+}
