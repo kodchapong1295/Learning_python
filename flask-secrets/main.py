@@ -20,5 +20,13 @@ def login():
     login_form = LoginForm()
     return render_template('login.html', form=login_form)
 
+@app.route("/success")
+def success():
+    return render_template('success.html')
+
+@app.route("/denied")
+def denied():
+    return render_template('denied.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
